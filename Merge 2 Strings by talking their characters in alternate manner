@@ -1,0 +1,17 @@
+s1=input(' Enter STring :')
+s2=input( 'Enter STring 2 : ')
+
+i,j=0,0
+
+r=''
+while i<len(s1) and j<len(s2):
+    r=r+s1[i]+s2[j]
+    i=i+1
+    j=j+1 
+    
+if i<len(s1):
+    r=r+s1[i:]
+if j<len(s2):
+    r=r+s2[j:]
+    
+print(r)
